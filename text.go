@@ -14,9 +14,9 @@ var DefaultTransport = http.DefaultTransport
 
 var DefaultName =
    "{{if .Show}}" +
-      "{{.Show}} - {{.Season}} {{.Episode}} - {{.Title}}" +
+      "[SHOW]{{.Show}}.S{{.Season}}E{{.Episode}}.{{.Title}}" +
    "{{else}}" +
-      "{{.Title}} - {{.Year}}" +
+      "[MOVIE]{{.Title}} ({{.Year}})" +
    "{{end}}"
 
 func Clean(s string) string {
