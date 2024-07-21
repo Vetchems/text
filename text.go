@@ -14,7 +14,7 @@ var DefaultTransport = http.DefaultTransport
 
 var DefaultName =
    "{{if .Show}}" +
-      "[SHOW]{{.Show}}.S{{.Season}}E{{.Episode}}.{{.Title}}" +
+      "[SHOW]{{.Show}};{{.Season}};{{.Episode}};{{.Title}}" +
    "{{else}}" +
       "[MOVIE]{{.Title}} ({{.Year}})" +
    "{{end}}"
