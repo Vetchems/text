@@ -1,4 +1,4 @@
-module 154.pages.dev/text
+module github.com/Vetchems/text
 
 go 1.22.0
 
